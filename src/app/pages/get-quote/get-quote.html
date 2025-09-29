@@ -1,0 +1,109 @@
+<div class="max-w-6xl mx-auto px-4 py-8">
+  <!-- Header Section -->
+  <div class="text-center mb-8">
+    <h1 class="text-4xl font-bold text-purple-800 mb-2">
+      <i class="fas fa-shield-alt text-yellow-500 mr-3"></i>
+      Dat-ichi Life
+    </h1>
+    <h2 class="text-2xl font-semibold text-purple-600 mb-6">1 Get a quote</h2>
+    
+    <!-- Progress Indicator -->
+    <div class="bg-purple-100 rounded-full h-2 max-w-md mx-auto mb-8">
+      <div class="bg-yellow-500 h-2 rounded-full w-1/5"></div>
+    </div>
+  </div>
+
+  <!-- Services Table -->
+  <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-purple-200">
+    <table class="w-full">
+      <!-- Table Header -->
+      <thead class="bg-gradient-to-r from-purple-600 to-purple-700 text-white">
+        <tr>
+          <th class="p-6 text-left font-bold text-lg"></th>
+          <th class="p-6 text-center font-bold text-lg border-l border-purple-500">
+            <i class="fas fa-clipboard-list mr-2"></i>Select Plan
+          </th>
+          <th class="p-6 text-center font-bold text-lg border-l border-purple-500">
+            <i class="fas fa-heartbeat mr-2"></i>My Health
+          </th>
+        </tr>
+      </thead>
+      
+      <!-- Table Body -->
+      <tbody>
+        <!-- Buy A Policy Row -->
+        <tr class="border-b border-purple-100 hover:bg-purple-50 transition-colors">
+          <td class="p-6 font-semibold text-purple-900 text-lg">
+            <i class="fas fa-file-contract text-yellow-500 mr-3"></i>Buy A Policy
+          </td>
+          <td class="p-6 text-center border-l border-purple-100">
+            <button 
+              (click)="navigateToSelectPlan()"
+              class="bg-purple-600 text-white px-8 py-3 rounded-lg hover:bg-purple-700 transition-all duration-300 font-semibold shadow-md hover:shadow-lg"
+            >
+              <i class="fas fa-arrow-right mr-2"></i>Select
+            </button>
+          </td>
+          <td class="p-6 text-center">
+            <button class="bg-gray-200 text-gray-600 px-8 py-3 rounded-lg font-semibold cursor-not-allowed opacity-70" disabled>
+              <i class="fas fa-lock mr-2"></i>Select
+            </button>
+          </td>
+        </tr>
+        
+        <!-- My Wallet Row -->
+        <tr class="border-b border-purple-100 hover:bg-purple-50 transition-colors">
+          <td class="p-6 font-semibold text-purple-900 text-lg">
+            <i class="fas fa-wallet text-yellow-500 mr-3"></i>My Wallet
+          </td>
+          <td class="p-6 text-center border-l border-purple-100">
+            <button class="bg-gray-200 text-gray-600 px-8 py-3 rounded-lg font-semibold cursor-not-allowed opacity-70" disabled>
+              <i class="fas fa-lock mr-2"></i>Select
+            </button>
+          </td>
+          <td class="p-6 text-center">
+            <button class="bg-gray-200 text-gray-600 px-8 py-3 rounded-lg font-semibold cursor-not-allowed opacity-70" disabled>
+              <i class="fas fa-lock mr-2"></i>Select
+            </button>
+          </td>
+        </tr>
+        
+        <!-- Login Row -->
+        <tr class="hover:bg-purple-50 transition-colors">
+          <td class="p-6 font-semibold text-purple-900 text-lg">
+            <i class="fas fa-user text-yellow-500 mr-3"></i>Login
+          </td>
+          <td class="p-6 text-center border-l border-purple-100">
+            <button class="bg-gray-200 text-gray-600 px-8 py-3 rounded-lg font-semibold cursor-not-allowed opacity-70" disabled>
+              <i class="fas fa-lock mr-2"></i>Select
+            </button>
+          </td>
+          <td class="p-6 text-center">
+            <button class="bg-gray-200 text-gray-600 px-8 py-3 rounded-lg font-semibold cursor-not-allowed opacity-70" disabled>
+              <i class="fas fa-lock mr-2"></i>Select
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Additional Info Section -->
+  <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="bg-purple-50 p-6 rounded-lg border border-purple-200">
+      <i class="fas fa-clock text-purple-600 text-2xl mb-3"></i>
+      <h3 class="font-semibold text-purple-800 mb-2">Quick Process</h3>
+      <p class="text-purple-600 text-sm">Get your insurance quote in just 5 minutes</p>
+    </div>
+    <div class="bg-yellow-50 p-6 rounded-lg border border-yellow-200">
+      <i class="fas fa-shield-alt text-yellow-600 text-2xl mb-3"></i>
+      <h3 class="font-semibold text-purple-800 mb-2">Secure & Safe</h3>
+      <p class="text-purple-600 text-sm">Your data is protected with bank-level security</p>
+    </div>
+    <div class="bg-purple-50 p-6 rounded-lg border border-purple-200">
+      <i class="fas fa-headset text-purple-600 text-2xl mb-3"></i>
+      <h3 class="font-semibold text-purple-800 mb-2">24/7 Support</h3>
+      <p class="text-purple-600 text-sm">Our team is always here to help you</p>
+    </div>
+  </div>
+</div>
